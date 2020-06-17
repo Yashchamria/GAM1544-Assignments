@@ -1,0 +1,58 @@
+{
+   "frames" : [
+      {
+         "filename" : "Background",
+         "frame" : {
+            "h" : 768,
+            "w" : 1024,
+            "x" : 8,
+            "y" : 8
+         }
+      },
+      {
+         "filename" : "Sun",
+         "frame" : {
+            "h" : 147,
+            "w" : 151,
+            "x" : 8,
+            "y" : 784
+         }
+      },
+      {
+         "filename" : "Earth",
+         "frame" : {
+            "h" : 36,
+            "w" : 36,
+            "x" : 167,
+            "y" : 784
+         }
+      },
+      {
+         "filename" : "Venus",
+         "frame" : {
+            "h" : 30,
+            "w" : 30,
+            "x" : 211,
+            "y" : 784
+         }
+      },
+      {
+         "filename" : "Mars",
+         "frame" : {
+            "h" : 21,
+            "w" : 21,
+            "x" : 249,
+            "y" : 784
+         }
+      },
+      {
+         "filename" : "Mercury",
+         "frame" : {
+            "h" : 11,
+            "w" : 11,
+            "x" : 278,
+            "y" : 784
+         }
+      }
+   ]
+}
