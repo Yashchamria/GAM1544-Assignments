@@ -1,0 +1,31 @@
+{
+   "frames" : [
+      {
+         "filename" : "Turret",
+         "frame" : {
+            "h" : 58,
+            "w" : 149,
+            "x" : 8,
+            "y" : 8
+         }
+      },
+      {
+         "filename" : "Body",
+         "frame" : {
+            "h" : 104,
+            "w" : 145,
+            "x" : 8,
+            "y" : 74
+         }
+      },
+      {
+         "filename" : "Shell",
+         "frame" : {
+            "h" : 6,
+            "w" : 18,
+            "x" : 165,
+            "y" : 8
+         }
+      }
+   ]
+}
