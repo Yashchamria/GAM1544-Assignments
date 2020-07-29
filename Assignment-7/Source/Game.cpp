@@ -73,10 +73,7 @@ void Game::Update(double delta)
     if (Math::RadiansToDegrees(m_angle) < 180 && Math::RadiansToDegrees(m_angle) > 0)
     {
         m_turret->SetRadians(m_angle - Math::DegreesToRadians(90));
-    }
 
-    if (Math::RadiansToDegrees(m_angle) < 180 && Math::RadiansToDegrees(m_angle) > 0)
-    {
         m_ballPosition = m_turret->GetPosition() + GameDev2D::Vector2(cos(m_angle),
             sin(m_angle)) * 90;
 
