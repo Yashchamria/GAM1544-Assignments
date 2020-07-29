@@ -102,7 +102,7 @@ void Game::Update(double delta)
     }
     if (m_ballEnable)
     {
-        Vector2 point = Math::CalculateTrajectory(m_ball->GetPosition(), velocity, GRAVITY, TARGET_FPS, i);
+        Vector2 point = Math::CalculateTrajectory(m_ballLaunchPosition, m_ballVelocity, GRAVITY, TARGET_FPS, i);
         m_ball->SetPosition(point);
         i++;
     }
@@ -125,6 +125,11 @@ void Game::Draw()
 
 void Game::HandleLeftMouseClick(float aMouseX, float aMouseY)
 {
+    if (!m_ballEnable)
+    {
+        m_ballVelocity = Vector2(cosf(m_angle), sinf(m_angle)) * SPEED;
+        m_ballLaunchPosition = m_ball->GetPosition();
+    }
     m_ballEnable = true;
 }
 
@@ -135,6 +140,7 @@ void Game::HandleRightMouseClick(float aMouseX, float aMouseY)
 
 void Game::HandleMouseMove(float aMouseX, float aMouseY, float aPreviousX, float aPreviousY)
 {
+
     m_TargetPosition = GameDev2D::Vector2(aMouseX, aMouseY);
 }
 
@@ -150,6 +156,7 @@ void Game::HandleKeyReleased(Keyboard::Key key)
 {
     if (key == Keyboard::Key::R)
     {
+
         m_ballEnable = false;
         i = 0;
     }

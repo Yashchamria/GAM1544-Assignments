@@ -31,7 +31,7 @@ private:
 
     float m_angle = 0.0f;
 
-    GameDev2D::Vector2 m_velocity, m_TargetPosition, m_direction, m_ballPosition;
+    GameDev2D::Vector2 m_velocity, m_TargetPosition, m_direction, m_ballPosition, m_ballVelocity, m_ballLaunchPosition;
 
     GameDev2D::Polygon* m_TrajectoryPoint;
     std::vector<GameDev2D::Vector2> m_Trajectory;
