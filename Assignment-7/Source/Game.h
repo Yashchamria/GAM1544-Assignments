@@ -1,4 +1,5 @@
 #pragma once
+#include <vector>
 
 // Class definition
 class Game
@@ -22,14 +23,20 @@ public:
 
 private:
     // Member variables GO HERE 
-    GameDev2D::SpriteAtlas* m_tank; 
-    GameDev2D::SpriteAtlas* m_turret;
-    GameDev2D::SpriteAtlas* m_shell;
 
-    float m_tankAngle = 0, m_turretAngle = 0, m_speed, m_turrentRadius, m_time;
+    GameDev2D::Polygon* m_turretBase;
+    GameDev2D::Polygon* m_turretTop;
+    GameDev2D::Polygon* m_turret;
+    GameDev2D::Polygon* m_ball;
 
-    GameDev2D::Vector2 m_tankPosition, m_tankVelocity, m_tankDirection,m_shellPosition, m_shellVelocity;
+    float m_angle = 0.0f;
 
-    bool m_shellEnable = false;
+    GameDev2D::Vector2 m_velocity, m_TargetPosition, m_direction, m_ballPosition;
 
+    GameDev2D::Polygon* m_TrajectoryPoint;
+    std::vector<GameDev2D::Vector2> m_Trajectory;
+
+    bool m_ballEnable = false;
+    bool m_ballRelease = false;
+    int i = 0;
 };

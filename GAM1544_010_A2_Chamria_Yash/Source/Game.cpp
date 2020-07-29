@@ -89,6 +89,7 @@ void Game::Update(double delta)
     m_direction = m_TargetPosition - m_ScreenCenter;
     m_angle = atan2f(m_direction.y, m_direction.x);
     m_angle = Math::RadiansToDegrees(m_angle);
+
     if (m_angle < 0)
     {
         m_angle += 360;
