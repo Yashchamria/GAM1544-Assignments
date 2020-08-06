@@ -348,6 +348,9 @@
     <ClInclude Include="Source\Timer.h" />
     <ClInclude Include="Source\Catcher.h" />
     <ClInclude Include="Source\ScreenBound.h" />
+    <ClInclude Include="Source\Ball.h" />
+    <ClInclude Include="Source\Trajectory.h" />
+    <ClInclude Include="Source\Launcher.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Libraries\lodepng\lodepng.cpp">
@@ -568,6 +571,9 @@
     <ClCompile Include="Source\Timer.cpp" />
     <ClCompile Include="Source\Catcher.cpp" />
     <ClCompile Include="Source\ScreenBound.cpp" />
+    <ClCompile Include="Source\Ball.cpp" />
+    <ClCompile Include="Source\Trajectory.cpp" />
+    <ClCompile Include="Source\Launcher.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Source\Libraries\jsoncpp\json_internalarray.inl">

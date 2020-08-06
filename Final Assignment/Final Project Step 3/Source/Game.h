@@ -1,6 +1,9 @@
 #pragma once
 #include "Catcher.h"
+#include "Ball.h"
 #include "ScreenBound.h"
+#include "Trajectory.h"
+#include "Launcher.h"
 #include <vector>
 
 
@@ -16,8 +19,9 @@ public:
 
     // Render game objects in the Draw method
     void Draw();
-
-    void Game::Reset();
+    void Reset();
+    void CollisionResponse(GameDev2D::Vector2 position);
+    void SetString(string string, double delta);
 
     // Input methods
     void HandleLeftMouseClick(float mouseX, float mouseY);
@@ -29,21 +33,16 @@ public:
 private:
     // Member variables GO HERE 
 
-    GameDev2D::Polygon* m_turretBase;
-    GameDev2D::Polygon* m_line;
-    GameDev2D::Polygon* m_turret;
-    GameDev2D::Polygon* m_ball;
+
     GameDev2D::Polygon* m_remainingBalls[MAXIMUM_LIMIT] = {};
     Catcher* m_Catcher;
     ScreenBound* m_screenBound;
-
+    Ball* m_Ball;
+    Trajectory* m_trajectory;
+    Launcher* m_launcher;
     float m_angle = 0.0f;
 
-    GameDev2D::Vector2 m_velocity, m_TargetPosition, m_direction, m_ballPosition, m_ballVelocity, m_ballLaunchPosition;
-
-    GameDev2D::Polygon* m_TrajectoryPoint;
-    std::vector<GameDev2D::Vector2> m_Trajectory;
-
+    GameDev2D::Vector2 m_velocity, m_TargetPosition, m_direction;
 
     bool m_ballEnable = false;
     int i = 0;

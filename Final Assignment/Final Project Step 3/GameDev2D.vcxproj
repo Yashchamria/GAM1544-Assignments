@@ -11,6 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Ball.h" />
     <ClInclude Include="Source\Catcher.h" />
     <ClInclude Include="Source\Constants.h" />
     <ClInclude Include="Source\Framework\Animation\Animator.h" />
@@ -86,6 +87,7 @@
     <ClInclude Include="Source\Framework\Windows\resource.h" />
     <ClInclude Include="Source\Framework\Windows\stdafx.h" />
     <ClInclude Include="Source\Game.h" />
+    <ClInclude Include="Source\Launcher.h" />
     <ClInclude Include="Source\Libraries\jsoncpp\autolink.h" />
     <ClInclude Include="Source\Libraries\jsoncpp\config.h" />
     <ClInclude Include="Source\Libraries\jsoncpp\features.h" />
@@ -98,8 +100,10 @@
     <ClInclude Include="Source\Libraries\lodepng\lodepng.h" />
     <ClInclude Include="Source\ScreenBound.h" />
     <ClInclude Include="Source\Timer.h" />
+    <ClInclude Include="Source\Trajectory.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Ball.cpp" />
     <ClCompile Include="Source\Catcher.cpp" />
     <ClCompile Include="Source\Framework\Animation\Animator.cpp" />
     <ClCompile Include="Source\Framework\Animation\Easing.cpp" />
@@ -171,6 +175,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Source\Launcher.cpp" />
     <ClCompile Include="Source\Libraries\jsoncpp\json_reader.cpp" />
     <ClCompile Include="Source\Libraries\jsoncpp\json_value.cpp" />
     <ClCompile Include="Source\Libraries\jsoncpp\json_writer.cpp" />
@@ -178,6 +183,7 @@
     <ClCompile Include="Source\Game.cpp" />
     <ClCompile Include="Source\ScreenBound.cpp" />
     <ClCompile Include="Source\Timer.cpp" />
+    <ClCompile Include="Source\Trajectory.cpp" />
     <ClCompile Include="Source\WinMain.cpp" />
   </ItemGroup>
   <ItemGroup>

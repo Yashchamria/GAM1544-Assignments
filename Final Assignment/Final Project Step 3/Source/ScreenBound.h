@@ -6,6 +6,7 @@ class ScreenBound
 private:
 	GameDev2D::Polygon* m_leftBound;
 	GameDev2D::Polygon* m_rightBound;
+	GameDev2D::Polygon* m_line;
 
 public:
 	ScreenBound();
